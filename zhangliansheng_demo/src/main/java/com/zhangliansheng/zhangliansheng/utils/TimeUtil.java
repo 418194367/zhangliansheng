@@ -8,6 +8,8 @@ package com.example.thread_pool_executor.utils;
  * 创建时间：2019/11/18 11:44
  */
 
+import org.elasticsearch.action.ActionListener;
+import org.elasticsearch.action.bulk.BulkRequest;
 import org.joda.time.DateTime;
 
 import java.time.*;
@@ -247,6 +249,20 @@ public class TimeUtil {
         System.out.println(TimeUtil.weekEnd);
         LocalDateTime localDateTime = date2LocalDateTime(new DateTime().minusDays(new DateTime().getDayOfWeek() - 1).withTimeAtStartOfDay().toDate());
         System.out.println(getDayStart(localDateTime));
+
+        ActionListener actionListener = new ActionListener<BulkRequest>(){
+
+
+            @Override
+            public void onResponse(BulkRequest bulkRequest) {
+
+            }
+
+            @Override
+            public void onFailure(Exception e) {
+
+            }
+        };
     }
 
 }
