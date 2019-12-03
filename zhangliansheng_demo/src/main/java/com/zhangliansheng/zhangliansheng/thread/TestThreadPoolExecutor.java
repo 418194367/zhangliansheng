@@ -1,6 +1,6 @@
-package com.example.thread_pool_executor.thread;
+package com.zhangliansheng.zhangliansheng.thread;
 
-import com.example.thread_pool_executor.ThreadPoolExecutorApplication;
+import com.zhangliansheng.zhangliansheng.ZhanglianshengApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicStampedReference;
  */
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = {ThreadPoolExecutorApplication.class})
+@SpringBootTest(classes = {ZhanglianshengApplication.class})
 @AutoConfigureMockMvc
 @Slf4j
 public class TestThreadPoolExecutor {
