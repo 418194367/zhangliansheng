@@ -1,13 +1,15 @@
 spring:
-  #rabbitmq
+  #rabbitmq基本配置
   rabbitmq:
     host: 192.168.3.200
     port: 5672
     username: yiautos
     password: yiautos123456
     virtual-host: /
+    #消费者配置
     listener:
       simple:
+        #ACK提交方式为手动
         acknowledge-mode: manual
         #预抓取数量
         prefetch: 10

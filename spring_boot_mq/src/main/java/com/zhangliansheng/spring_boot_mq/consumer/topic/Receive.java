@@ -27,6 +27,7 @@ public class Receive {
     @RabbitHandler
     public void receive(@Payload Order order, @Headers Map<String,Object> headers, Channel channel) throws IOException {
         System.err.println(order);
+//        throw new RuntimeException("000");
         long tag = (Long) headers.get(AmqpHeaders.DELIVERY_TAG);
         channel.basicAck(tag,false);
     }
