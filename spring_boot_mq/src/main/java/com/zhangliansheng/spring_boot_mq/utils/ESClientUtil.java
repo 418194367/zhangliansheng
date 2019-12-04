@@ -1,4 +1,4 @@
-package com.zhangliansheng.zhangliansheng.utils;
+package com.zhangliansheng.spring_boot_mq.utils;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.get.GetRequest;

@@ -1,13 +1,13 @@
-package com.zhangliansheng.zhangliansheng;
+package com.zhangliansheng.spring_boot_mq;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZhanglianshengApplication {
+public class MqApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZhanglianshengApplication.class, args);
+        SpringApplication.run(MqApplication.class, args);
     }
 
 }

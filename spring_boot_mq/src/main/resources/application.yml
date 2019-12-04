@@ -1,0 +1,20 @@
+spring:
+  #rabbitmq
+  rabbitmq:
+    host: 192.168.3.200
+    port: 5672
+    username: yiautos
+    password: yiautos123456
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        #预抓取数量
+        prefetch: 10
+        retry:
+          #最大重试次数
+          max-attempts: 5
+          #是否开启消费者重试
+          enabled: true
+          #重试间隔时间
+          initial-interval: 10000

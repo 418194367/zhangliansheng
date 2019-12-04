@@ -1,4 +1,4 @@
-package com.example.thread_pool_executor.utils;
+package com.zhangliansheng.spring_boot_mq.utils;
 
 /**
  * <pre>项目名称：yiautos-union-service
