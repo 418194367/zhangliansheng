@@ -13,10 +13,17 @@ public class SendTest {
 
     @Autowired
     Send send;
+    @Autowired
+    ConfirmSend confirmSend;
 
     @Test
     public void  send() {
         send.Send();
+    }
+
+    @Test
+    public void  confirmSend() {
+        confirmSend.sendConfirm();
     }
 
 }

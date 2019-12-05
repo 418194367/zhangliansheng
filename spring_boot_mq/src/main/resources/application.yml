@@ -20,3 +20,6 @@ spring:
           enabled: true
           #重试间隔时间
           initial-interval: 10000
+    #消息确认模式
+    publisher-confirms: true
+    publisher-returns: true

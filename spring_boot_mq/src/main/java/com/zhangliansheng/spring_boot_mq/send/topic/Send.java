@@ -21,7 +21,15 @@ public class Send {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    /**
+     * @Author zhangliansheng
+     * @Description 发送路由模式消息
+     * @Date 17:35 2019/12/4
+     * @Param []
+     * @return void
+     **/
     public void Send(){
+        //死循环发送消息
         while (true) {
             CorrelationData correlationData = new CorrelationData();
             correlationData.setId(UUID.randomUUID().toString());
