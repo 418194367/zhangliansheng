@@ -17,6 +17,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class TimeUtil {
 
@@ -240,29 +241,7 @@ public class TimeUtil {
      * @param args
      */
     public static void main(String[] args) {
-//        System.out.println(getDayStart());
-//        System.out.println(getDayEnd());
-//        System.out.println(getFirstDayOfMonth());
-//        System.out.println(getLastDayOfMonth());
-//        System.out.println(days(LocalDateTime.now().getYear(), LocalDateTime.now().getMonth().getValue()));
-        System.out.println(TimeUtil.weekStart);
-        System.out.println(TimeUtil.weekEnd);
-        LocalDateTime localDateTime = date2LocalDateTime(new DateTime().minusDays(new DateTime().getDayOfWeek() - 1).withTimeAtStartOfDay().toDate());
-        System.out.println(getDayStart(localDateTime));
 
-        ActionListener actionListener = new ActionListener<BulkRequest>(){
-
-
-            @Override
-            public void onResponse(BulkRequest bulkRequest) {
-
-            }
-
-            @Override
-            public void onFailure(Exception e) {
-
-            }
-        };
     }
 
 }
